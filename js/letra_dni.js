@@ -27,3 +27,12 @@ function lista_DNIs() {
 
   return DNIs
 }
+
+function test() {
+  const DNIs = lista_DNIs()
+  console.log("Completar los siguientes DNIs con la letra correspondiente:\n")
+  console.log(DNIs.join(", ") + "\n")
+  console.log(DNIs.map((nro_dni) => nro_dni + letra_dni(nro_dni)).join(", "))
+}
+
+test()
