@@ -10,3 +10,12 @@ function letra_dni(nro_dni) {
 
 const nro_aleatorio = (min, max) => Math.round(Math.random() * max - min)
 
+function dni_aleatorio() {
+  let nro_dni = ""
+
+  for (let j = 1; j <= 8; j++)
+    nro_dni += nro_aleatorio(0, 9).toString()
+
+  return nro_dni
+}
+
