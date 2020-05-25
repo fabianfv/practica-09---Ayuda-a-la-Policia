@@ -19,3 +19,11 @@ function dni_aleatorio() {
   return nro_dni
 }
 
+function lista_DNIs() {
+  const DNIs = []
+
+  for (let i = 1; i <= 10; i++)
+    DNIs.push(dni_aleatorio())
+
+  return DNIs
+}
